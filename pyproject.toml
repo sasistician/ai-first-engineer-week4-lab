@@ -1,0 +1,18 @@
+[project]
+name = "week4-mcp-lab"
+version = "0.1.0"
+description = "Week 4 lab — a FastMCP server exposing a live web-search tool, no API key required"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "ddgs>=9.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
